@@ -1,0 +1,134 @@
+body {
+	font-family:Verdana,Tahoma,Arial,Helvetica,sans-serif;
+	margin:0;
+	padding:0;
+	height:100%;
+	font-size: 12px;
+}
+
+#header {
+	background:#b13232;
+	height:75px;
+}
+
+#container {
+	height:100%;
+	min-height:100%;
+	position:relative;
+}
+
+#body {
+	padding:10px;
+	padding-bottom:60px;	
+}
+
+#footer
+{
+	background:#b13232;
+	position:absolute;
+	bottom:0;
+	width:100%;
+	height:60px;
+}
+
+#flashMessage {
+	padding: 1em;
+	font-weight: bold;
+	color: #9e1a00;
+}
+
+#menu a{
+	font-size: 16px;
+	/*font-weight: bold;*/
+	color: #fff;
+	text-decoration: none;
+}
+
+#menu a:hover{
+	color: #fff;
+	text-decoration: underline;
+}
+
+h2 {
+	font-size:1.4em;
+	font-weight:bold;
+	color:#FFF;
+	line-height:4.2em;
+	margin-left:10px;
+	/*width: 50% !important;*/
+}
+
+table {
+	border: 1px solid #b5b5b5;
+	border-collapse: collapse;
+	width: 100%;
+	font-size: 12px;
+	
+}
+
+table tr th {
+	font-weight: bold;
+	padding: 4px;
+}
+
+table tr.odd td {
+	background-color:#ebebeb;
+}
+
+table tr td {
+	padding: 2px;
+}
+
+.mouseon {
+	background: #d1d1d1 !important;
+}
+
+div.input label {
+	display: inline-block;
+	line-height: 1.6em;
+	vertical-align: top;
+	width: 175px;
+	font-weight: bold;
+}
+
+div.select,div.textarea,div.datetime,div.text {
+	padding: 0.6em;
+}
+div.text  input {
+	font-size: 1.1em;
+	height: 1.4em;
+}
+
+.submit {
+	margin: 10px 0;
+}
+
+span.oblig {color:red;}
+.error-message {color: red; font-size: 10px; font-style:italic;}
+
+div.submit {
+	display: block;
+}
+
+form.formSearch div.input {
+	margin-top: -7px;
+	float:left;
+	width: 170px;
+}
+
+
+.PrevPg
+{
+  margin-right: 10px;
+}
+
+.NextPg
+{
+  margin-left: 10px;
+}
+
+.DisabledPgLk
+{
+  width: 100px;
+  display: inline;
+}

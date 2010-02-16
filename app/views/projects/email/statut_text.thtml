@@ -1,0 +1,1 @@
+Le statut du projet <?php echo $nameProject ?> à été changé pour <?php echo $newStatut ?>

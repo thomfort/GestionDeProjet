@@ -1,0 +1,36 @@
+<p> 
+<?php echo $this->data['msgMail'][0] ?>
+<br/>
+<?php echo $this->data['msgMail'][1] ?>
+</p>
+<p>
+
+<table border="0" cellpadding="5">
+
+<?php 
+	if($typ == "edit"){
+		unset($this->data['msgMail'][0],$this->data['msgMail'][1]);
+		echo '<strong><font color=\'red\'>Liste des modifications sur le projet</strong><br>';
+		foreach($this->data['msgMail'] as $key => $value) {
+			echo '- '.$value.'<br>';
+		}
+		echo '</font><br>';
+	}
+	echo "<tr><td width=40%><strong>Client:</strong> ".$this->data['clientname'][0][0]['Name']."</td></tr>"; 
+	echo "<tr><td><strong>Contact:</strong> ".$this->data['contactname'][0][0]['nom']." ".$this->data['contactname'][0][0]['prenom']."</td></tr>";
+	echo "<tr><td><br/><strong>Titre du projet:</strong> ".$this->data['Project']['Descr']."</td></tr>"; 
+	//echo "<tr><td><strong>Code budgetaire:</strong> ".$this->data['Project']['ProjId']."</td></tr>"; 
+	echo "<tr><td><strong>Code budgetaire via:</strong> ".$this->data['Project']['x2631824_codeBudget']."</td></tr>"; 
+	echo "<tr><td><strong>Code SMART via:</strong> ".$this->data['Project']['x2631824_codeSmart']."</td></tr>"; 
+	echo "<tr><td><strong>Facturation:</strong> ".$this->data['facturationname'][0][0]['nom']."</td></tr>"; 
+	echo "<tr><td><strong>Budget:</strong> ".$this->data['Project']['EstSales']."</td></tr>"; 
+	echo "<tr><td><strong>Numero Bon de commande:</strong> ".$this->data['Project']['x2631824_bonCommande']."</td></tr>"; 
+	echo "<tr><td><strong>Date de debut:</strong> ".$this->data['Project']['BegDate']."</td></tr>"; 
+	echo "<tr><td><strong>Date de fin:</strong> ".$this->data['Project']['EndDate']."</td></tr>"; 
+	echo "<tr><td><strong>Employe:</strong> ".$this->data['employename'][0][0]['LastName']." ".$this->data['employename'][0][0]['FirstName']."</td></tr>";	
+	echo "<tr><td><strong>Statut:</strong> ".$this->data['statutname'][0][0]['nom']."</td></tr>"; 
+	echo "<tr><td colspan=2><strong>Description:</strong><br/> ".nl2br($this->data['Project']['Msg'])."</td></tr>"; 
+
+?>
+</table>
+</p>
